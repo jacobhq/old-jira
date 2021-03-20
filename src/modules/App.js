@@ -4,6 +4,8 @@ import Flag, { FlagGroup } from '@atlaskit/flag';
 import Modal from '@atlaskit/modal-dialog';
 import Page from '@atlaskit/page';
 import '@atlaskit/css-reset';
+import SuccessIcon from '@atlaskit/icon/glyph/check-circle';
+import { G400 } from '@atlaskit/theme/colors';
 
 import StarterNavigation from '../components/StarterNavigation';
 
@@ -67,11 +69,15 @@ export default class App extends Component {
             {
               this.state.flags.map(flag => (
                 <Flag
-                  id={flag.id}
-                  key={flag.id}
-                  title="Flag Title"
-                  description="Flag description"
-                />
+      appearance="success"
+      icon={<SuccessIcon label="Success" secondaryColor={G400} />}
+      id={flag.id}
+      key={flag.id}
+      title="Welcome to the room"
+      description="You’re now part of “Coffee Club”."
+      onBlur={setTimeout(function(){this.onFlagDismissed(flag.id)}.bind(this), 5000)}
+      actions={[{ content: 'Join the conversation', onClick: () => {this.onFlagDismissed(flag.id)} }]}
+    />
               ))
             }
           </FlagGroup>

@@ -9,7 +9,7 @@ export default (
     position="right bottom"
     items={[
       {
-        heading: 'Joshua Nelson',
+        heading: 'Jacob',
         items: [
           { content: 'View profile' },
           { content: 'Manage Atlassian account' },

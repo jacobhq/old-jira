@@ -11,7 +11,7 @@ import DashboardIcon from '@atlaskit/icon/glyph/dashboard';
 import GearIcon from '@atlaskit/icon/glyph/settings';
 import SearchIcon from '@atlaskit/icon/glyph/search';
 import CreateIcon from '@atlaskit/icon/glyph/add';
-import AtlassianIcon from '@atlaskit/icon/glyph/atlassian';
+import AtlassianIcon from '@atlaskit/icon/glyph/jira-software';
 import ArrowleftIcon from '@atlaskit/icon/glyph/arrow-left';
 
 import CreateDrawer from '../components/CreateDrawer';
@@ -19,6 +19,12 @@ import SearchDrawer from '../components/SearchDrawer';
 import HelpDropdownMenu from '../components/HelpDropdownMenu';
 import AccountDropdownMenu from '../components/AccountDropdownMenu';
 import atlaskitLogo from '../images/atlaskit.png';
+
+import { N0 } from '@atlaskit/theme/colors';
+
+import {
+  JiraSoftwareIcon
+} from '@atlaskit/logo';
 
 export default class StarterNavigation extends React.Component {
   state = {
@@ -43,7 +49,7 @@ export default class StarterNavigation extends React.Component {
 
   render() {
     const backIcon = <ArrowleftIcon label="Back icon" size="medium" />;
-    const globalPrimaryIcon = <AtlassianIcon label="Atlassian icon" size="xlarge" />;
+    const globalPrimaryIcon = <AtlassianIcon label="Atlassian icon" size="large" />;
 
     return (
       <Nav
