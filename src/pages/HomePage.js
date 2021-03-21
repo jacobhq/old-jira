@@ -4,7 +4,6 @@ import Button, { ButtonGroup } from '@atlaskit/button';
 import MainSection from '../components/MainSection';
 import ContentWrapper from '../components/ContentWrapper';
 import PageTitle from '../components/PageTitle';
-import Tracker from '../components/Tracker';
 
 export default class HomePage extends Component {
   static contextTypes = {
