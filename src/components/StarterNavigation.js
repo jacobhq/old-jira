@@ -20,12 +20,6 @@ import HelpDropdownMenu from '../components/HelpDropdownMenu';
 import AccountDropdownMenu from '../components/AccountDropdownMenu';
 import atlaskitLogo from '../images/atlaskit.png';
 
-import { N0 } from '@atlaskit/theme/colors';
-
-import {
-  JiraSoftwareIcon
-} from '@atlaskit/logo';
-
 export default class StarterNavigation extends React.Component {
   state = {
     navLinks: [
